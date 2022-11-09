@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Caching.InMemory\Ingredients.Caching.InMemory.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Core\Ingredients.Core.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Email\Ingredients.Email.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Integration.MassTransit\Ingredients.Integration.MassTransit.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Logging\Ingredients.Logging.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Messaging.Persistence.Postgres\Ingredients.Messaging.Persistence.Postgres.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Monitoring\Ingredients.Monitoring.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Persistence.EfCore.Postgres\Ingredients.Persistence.EfCore.Postgres.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Persistence.Mongo\Ingredients.Persistence.Mongo.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Resiliency\Ingredients.Resiliency.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Security\Ingredients.Security.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Swagger\Ingredients.Swagger.csproj" />
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Validation\Ingredients.Validation.csproj" />
+    <ProjectReference Include="..\..\Shared\EInventory.Services.Shared\EInventory.Services.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="EInventory.Services.Orders.IntegrationTests" />
+  </ItemGroup>
+
+</Project>

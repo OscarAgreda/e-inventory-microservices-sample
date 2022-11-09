@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\Services\Customers\EInventory.Services.Customers.Api\EInventory.Services.Customers.Api.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Services\Customers\EInventory.Services.Customers\EInventory.Services.Customers.csproj" />
+    <ProjectReference Include="..\..\..\shared\Tests.Shared\Tests.Shared.csproj" />
+  </ItemGroup>
+  
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Ingredients.Core\Ingredients.Core.csproj" />
+    <ProjectReference Include="..\Ingredients.Persistence.EfCore.Postgres\Ingredients.Persistence.EfCore.Postgres.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

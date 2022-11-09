@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Ingredients.Integration.MassTransit.IntegrationTests</AssemblyName>
+    <RootNamespace>Ingredients.Integration.MassTransit.IntegrationTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\Services\Catalogs\EInventory.Services.Catalogs.Api\EInventory.Services.Catalogs.Api.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Services\Customers\EInventory.Services.Customers.Api\EInventory.Services.Customers.Api.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Services\Identity\EInventory.Services.Identity.Api\EInventory.Services.Identity.Api.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Services\Shared\EInventory.Services.Shared\EInventory.Services.Shared.csproj" />
+    <ProjectReference Include="..\..\..\shared\Tests.Shared\Tests.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+</Project>

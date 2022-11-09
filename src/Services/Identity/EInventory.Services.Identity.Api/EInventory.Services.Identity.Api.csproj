@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Ingredients\Ingredients.Web\Ingredients.Web.csproj" />
+    <ProjectReference Include="..\EInventory.Services.Identity\EInventory.Services.Identity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="EInventory.Services.Identity.IntegrationTests" />
+  </ItemGroup>
+
+</Project>

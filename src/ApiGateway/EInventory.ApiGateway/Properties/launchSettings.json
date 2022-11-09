@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemaeinventory.org/launchsettings.json",
+  "profiles": {
+    "EInventory.ApiGateway": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "",
+      "applicationUrl": "https://localhost:3010;http://localhost:3000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

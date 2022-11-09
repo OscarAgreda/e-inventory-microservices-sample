@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Abstractions\Ingredients.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Core\Ingredients.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Integration.MassTransit\Ingredients.Integration.MassTransit.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Logging\Ingredients.Logging.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Persistence.EfCore.Postgres\Ingredients.Persistence.EfCore.Postgres.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Persistence.Mongo\Ingredients.Persistence.Mongo.csproj" />
+    <ProjectReference Include="..\..\..\src\Ingredients\Ingredients.Security\Ingredients.Security.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.17.0" />
+    <PackageReference Include="Hypothesist" Version="2.0.30" />
+    <PackageReference Include="Hypothesist.MassTransit" Version="2.0.30" />
+    <PackageReference Include="MassTransit" Version="8.0.0" />
+    <PackageReference Include="Verify.Xunit" Version="17.1.4" />
+    <PackageReference Include="XunitContext" Version="3.2.3" />
+  </ItemGroup>
+</Project>
